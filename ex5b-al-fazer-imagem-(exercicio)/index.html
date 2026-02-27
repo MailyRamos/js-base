@@ -68,12 +68,14 @@
   <!-- Script JavaScript embutido na página -->
   <script>
 
-    const image = document.querySelector("#myImage");
-    const text = document.querySelector("#myText");
-    const subtext = document.querySelector("#mySubText");
+    // Seleciona a imagem e os parágrafos pelo ID
+    const image = document.querySelector('#myImage');
+    const text = document.querySelector('#myText');
+    const subtext = document.querySelector('#mySubText');
 
-    const imagem1 = "image.png";
-    const imagem2 = "image2.png";
+    // Define as URLs das imagens
+    const imagem1 = 'image.png';
+    const imagem2 = 'image2.png';
 
     image.addEventListener('mouseover',() => {
       image.src = imagem2;
