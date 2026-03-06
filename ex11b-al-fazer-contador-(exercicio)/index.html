@@ -57,6 +57,15 @@
     ];
 
        // 1ª Digitação (Resolva aqui o exercício)
+      const button = document.getElementById('newQuoteButton');
+      const quote = document.getElementById('quote');
+      let currentText = 0;
+
+      button.addEventListener('click', () => {
+        quote.textContent = quotes[currentText];
+        currentText = (currentText + 1) % quotes.length
+      });
+
 
 
   </script>
